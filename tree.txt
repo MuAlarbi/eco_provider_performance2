@@ -1,0 +1,33 @@
+.
+├── README.md
+├── data_source
+│   ├── Dockerfile
+│   ├── requirements.txt
+│   ├── source.py
+│   ├── upload_files
+│   └── utils.py
+├── functions
+│   ├── first
+│   │   ├── Dockerfile
+│   │   ├── __pycache__
+│   │   │   └── func1.cpython-39.pyc
+│   │   ├── docker-compose.yml
+│   │   ├── func1.py
+│   │   └── requirements.txt
+│   ├── second
+│   │   ├── Dockerfile
+│   │   ├── __pycache__
+│   │   │   └── func2.cpython-39.pyc
+│   │   ├── docker-compose.yml
+│   │   ├── func2.py
+│   │   └── requirements.txt
+│   └── third
+│       ├── Dockerfile
+│       ├── __pycache__
+│       │   └── func3.cpython-39.pyc
+│       ├── docker-compose.yml
+│       ├── func3.py
+│       └── requirements.txt
+└── strucure.txt
+
+10 directories, 21 files

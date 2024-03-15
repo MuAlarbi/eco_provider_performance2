@@ -1,0 +1,43 @@
+version: '3.8'
+services:
+  func1:
+    build:
+      context: ./functions/first
+    ports:
+      - "8001:8001"
+    networks:
+      - app-network
+
+  func2:
+    build:
+      context: ./functions/second
+    ports:
+      - "8002:8002"
+    depends_on:
+      - func1
+    networks:
+      - app-network
+
+  func3:
+    build:
+      context: ./functions/third
+    ports:
+      - "8003:8003"
+    depends_on:
+      - func2
+    networks:
+      - app-network
+
+  data-source:
+    build:
+      context: ./data_source
+    depends_on:
+      - func1
+      - func2
+      - func3
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
