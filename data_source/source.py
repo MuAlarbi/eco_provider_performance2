@@ -312,7 +312,7 @@ The function performs the following steps:
    
     # file_size = int(input("Enter file size in MB: "))
     file_size = 1
-    files_directory = 'upload_files/'
+    files_directory = ''
 
     total_size = 0
     number_of_files = 0
