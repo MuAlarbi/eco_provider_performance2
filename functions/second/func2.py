@@ -95,7 +95,7 @@ def get_latency_and_packet_loss(server_url, number_of_requests):
     # find os default TTL using the following commmnads 
     # MAC_OS sysctl net.inet.ip.ttl
     # LINUX sysctl net.ipv4.ip_default_ttl
-    defualtTTL = 64
+    defualtTTL = 256   
     numberOfHops = []
     lines = ping_result[0].decode('utf-8').split("\n")
     for lineIdx in range(1,len(lines)-5):
