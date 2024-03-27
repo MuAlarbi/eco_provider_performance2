@@ -316,7 +316,7 @@ The function performs the following steps:
 
     total_size = 0
     number_of_files = 0
-    while number_of_files <=10:
+    while number_of_files <1:
         total_size += file_size
         number_of_files += 1
         file_name = f"file_{file_size}.txt"
